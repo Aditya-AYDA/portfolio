@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya Kapgate | Video Editor • Blender Artist • AI Creator</title>
+  <meta name="description" content="Portfolio of Aditya Kapgate — Video Editor, Blender 3D Artist, and AI Video Creator specializing in cinematic visuals, 3D animations, and next-gen storytelling.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Three.js r168 Import Map for ES Modules -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.168.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.168.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Custom Cursor Glow -->
+  <div id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Aditya Kapgate Home">
+        <span class="dot"></span>
+        <span>ADITYA KAPGATE</span>
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-background-fx" aria-hidden="true"></div>
+
+      <div class="hero-container">
+        <!-- Left Side: 2.5D Character Container (Populated by JS) -->
+        <div class="hero-character-wrapper">
+          <div id="character-container" role="img" aria-label="Interactive 3D character display"></div>
+        </div>
+
+        <!-- Right Side: Intro & CTAs -->
+        <div class="hero-content">
+          <h1 class="hero-greeting">
+            Hi, I'm <span class="gradient-text">Aditya</span>
+          </h1>
+
+          <p class="hero-tagline">
+            <span>Video Editor</span>
+            <span class="bullet">•</span>
+            <span>Blender Artist</span>
+            <span class="bullet">•</span>
+            <span>AI Creator</span>
+          </p>
+
+          <p class="hero-bio">
+            Crafting immersive visual stories through high-octane editing, photorealistic 3D environments in Blender, and cutting-edge generative AI workflows.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#work" class="btn btn-primary">
+              <span>See My Work</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <span>Get In Touch</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <!-- Three.js Hand Canvas Container (Positioned behind content when in viewport) -->
+      <div id="hand-scene-container" aria-hidden="true"></div>
+
+      <div class="skills-wrapper">
+        <div class="section-header">
+          <h2 class="section-title">What I Do</h2>
+          <p class="section-subtitle">Bridging traditional film craft with next-generation digital artistry and AI technology.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill 1: Video Editing -->
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <span class="skill-icon" role="img" aria-label="Video editing clapperboard">🎬</span>
+              <h3>Video Editing</h3>
+              <p>Cinematic cuts, transitions & storytelling</p>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-header">
+                <span>Proficiency</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 2: Blender 3D -->
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <span class="skill-icon" role="img" aria-label="Artist palette">🎨</span>
+              <h3>Blender 3D</h3>
+              <p>Modeling, texturing & rendering</p>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-header">
+                <span>Proficiency</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 3: AI Videos -->
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <span class="skill-icon" role="img" aria-label="Robot">🤖</span>
+              <h3>AI Videos</h3>
+              <p>AI-powered video generation & editing</p>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-header">
+                <span>Proficiency</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 80%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 4: Motion Graphics -->
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <span class="skill-icon" role="img" aria-label="Sparkles">✨</span>
+              <h3>Motion Graphics</h3>
+              <p>Dynamic text & visual effects</p>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-header">
+                <span>Proficiency</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 5: Color Grading -->
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <span class="skill-icon" role="img" aria-label="Artist palette">🎨</span>
+              <h3>Color Grading</h3>
+              <p>Professional color science & LUTs</p>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-header">
+                <span>Proficiency</span>
+                <span>88%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 88%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 6: Sound Design -->
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <span class="skill-icon" role="img" aria-label="Loudspeaker">🔊</span>
+              <h3>Sound Design</h3>
+              <p>Audio mixing & sound effects</p>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-header">
+                <span>Proficiency</span>
+                <span>75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 75%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">My Work</h2>
+          <p class="section-subtitle">Selected portfolio projects across video editing, 3D modeling, and generative AI media.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-container" role="tablist" aria-label="Filter portfolio projects">
+          <button class="filter-btn active" data-category="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-category="editing" role="tab" aria-selected="false">Video Editing</button>
+          <button class="filter-btn" data-category="blender" role="tab" aria-selected="false">Blender</button>
+          <button class="filter-btn" data-category="ai" role="tab" aria-selected="false">AI Videos</button>
+        </div>
+
+        <!-- Dynamic Video Grid Populated by JS -->
+        <div id="video-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-content">
+          <div class="section-header">
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="contact-desc">
+              Have a project in mind, need cinematic editing, custom 3D visuals, or innovative AI video production? Let's bring your creative vision to life.
+            </p>
+          </div>
+
+          <a href="mailto:adityakapgate@example.com" class="contact-email-btn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>hello@adityakapgate.com</span>
+          </a>
+
+          <!-- Social Links with SVG icons in glassmorphism circles -->
+          <div class="social-links" aria-label="Social media links">
+            <!-- YouTube -->
+            <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="YouTube Channel">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+
+            <!-- Instagram -->
+            <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Video Lightbox Modal -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Video Player Modal" aria-hidden="true">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close video player">&times;</button>
+      <div class="lightbox-video-wrapper">
+        <iframe id="lightbox-iframe" src="" title="Portfolio Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Aditya Kapgate. Built with &#x2764;&#xfe0f; and Three.js</p>
+    </div>
+  </footer>
+
+  <!-- GSAP 3.12.5 and ScrollTrigger CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Main Application Script (ES Module) -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

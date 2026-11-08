@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "Cinematic Travel Montage",
+    "category": "editing",
+    "youtube": "dQw4w9WgXcQ",
+    "description": "A cinematic travel video with smooth transitions"
+  },
+  {
+    "id": 2,
+    "title": "Product Visualization",
+    "category": "blender",
+    "youtube": "dQw4w9WgXcQ",
+    "description": "3D product render in Blender Cycles"
+  },
+  {
+    "id": 3,
+    "title": "AI Music Video",
+    "category": "ai",
+    "youtube": "dQw4w9WgXcQ",
+    "description": "AI-generated music video using Runway & Sora"
+  },
+  {
+    "id": 4,
+    "title": "Wedding Highlight Reel",
+    "category": "editing",
+    "youtube": "dQw4w9WgXcQ",
+    "description": "Emotional wedding story edit"
+  },
+  {
+    "id": 5,
+    "title": "Sci-Fi Environment",
+    "category": "blender",
+    "youtube": "dQw4w9WgXcQ",
+    "description": "Detailed sci-fi scene with volumetric lighting"
+  },
+  {
+    "id": 6,
+    "title": "AI Short Film",
+    "category": "ai",
+    "youtube": "dQw4w9WgXcQ",
+    "description": "Short film created entirely with AI tools"
+  },
+  {
+    "id": 7,
+    "title": "Corporate Promo",
+    "category": "editing",
+    "youtube": "dQw4w9WgXcQ",
+    "description": "Dynamic corporate brand video"
+  },
+  {
+    "id": 8,
+    "title": "Character Modeling",
+    "category": "blender",
+    "youtube": "dQw4w9WgXcQ",
+    "description": "Stylized character from scratch to render"
+  },
+  {
+    "id": 9,
+    "title": "AI Avatar Animation",
+    "category": "ai",
+    "youtube": "dQw4w9WgXcQ",
+    "description": "AI-powered avatar lip sync and animation"
+  }
+]
